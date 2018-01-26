@@ -31,9 +31,10 @@
 											
 			<div class="post-header section">
 		
+
 				<div class="post-header-inner section-inner">
 																									
-					
+
 				
 				</div><!-- .post-header-inner section-inner -->
 														

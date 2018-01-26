@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+/*---------------------------------------------------------------------------------
+
+	Theme Name: pruebaU
+    Text Domain: pruebaU
+	Version: 1.0
+	Description: A theme for test
+	Tags: style,layout,Gallery,images.
+	Author: Yoselyn Ramirez
+	Author URI: https://github.com/esmeraldarr/PruebaUpsocl
+	Theme URI: https://github.com/esmeraldarr/PruebaUpsocl
+	License: GNU General Public License version 2.0
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	
+	All files, unless otherwise stated, are released under the GNU General Public License
+	version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+-----------------------------------------------------------------------------------
+
+	0.	CSS Reset
+	1.	Document Setup
+	2.  Structure
+	3.	Header
+	4.	Navigation
+	5.	Main Content
+	6.  Single Post
+	7.	Post Content
+	8.	Comments
+	9.	Pagination
+	10.	Page & Page Templates
+	11.	Footer
+	12.	Credits
+	13. Media Queries
+
+----------------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------------- */
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------------- */
+
+html, body { margin:0; padding:0;}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img, small, strike, sub, sup, li, ol, ul, fieldset, form, label, legend, button, table, caption, tr, th, td {
+	margin:0;
+	padding:0;
+	border:0;
+	font-weight:normal;
+	font-style:normal;
+	font-size:100%;
+	line-height:1;
+	font-family:inherit;
+	text-align:left;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+ol, ul {
+	list-style:none;
+}
+
+blockquote:before, blockquote:after {
+	content:"";
+}
+
+a { outline:none; }
+
+input,
+textarea { -webkit-font-smoothing: antialiased; }
+
+input[type=search] {
+   -moz-appearance:none;
+   -webkit-appearance:none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	1. Document Setup
+/* -------------------------------------------------------------------------------- */
+
+
+body {
+	margin: 0;
+	padding: 0;
+	border: none;
+	color: #222;
+	background: #FFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+}
+
+body a {
+	color: #CA2017;
+	text-decoration: none;
+}
+
+body a:hover {
+	color: #CA2017;
+	text-decoration: none;
+}
+
+* { 
+	box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+.hidden { display: none; }
+.clear { clear: both; }
+.fleft { float: left; }
+.fright { float: right; }
+
+::selection {
+	background: #222;
+	color: #FFF;
+}
+
+::-webkit-input-placeholder { color: #A9A9A9; }
+:-ms-input-placeholder { color: #A9A9A9; }
+
+.content input[type="submit"],
+.content input[type="reset"],
+.content input[type="button"],
+
+
+/* -------------------------------------------------------------------------------- */
+/*	3. Header
+/* -------------------------------------------------------------------------------- */
+
+
+header { 
+	padding: 1px 0;
+	border-top: 4px solid transparent; 
+	background-image:linear-gradient(to right,#ffaf2a,#ff932f,#ff942f,#ff754a,#fe5d64,#f24983,#de4ca0,#bc6ca9,#8e84b1,#8e84b1,#3a9aba,#00adb5,#00b497,#00b982,#00ba82,#00b791);
+}
+
+/* -------------------------------------------------------------------------------- */
+/*	4. Main content
+/* -------------------------------------------------------------------------------- */
+.wrapper {
+	height:100%;
+	padding: 2% 2%;
+	background-color: #FFF;
+    margin-top: -46px;
+}
+
+#imagen {
+	position:relative;
+}
+#imagen>div {		
+	position: relative;
+	bottom:320px;
+	color:#fff;
+	background-color:#000;
+	padding:30px 10px;
+	font-weight:bold;
+}
+
+#imagen>div.title{
+	position: relative;
+	bottom:330px;
+	color:#fff;
+	padding:15px 10px
+	font-weight:bold;
+}
+
+
+/*-----------------------------------------------
+media Main content
+*/
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    #imagen>div {		
+    	position: relative;
+    	bottom:220px;
+    	color:#fff;
+    	background-color:#000;
+    	padding:30px 10px; 
+    	font-weight:bold;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #imagen>div {		
+    	position: relative;
+    	bottom:100px;
+    	color:#fff;
+    	background-color:#000;
+    	padding:10px 10px; 
+    	font-weight:bold;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    #imagen>div.title{
+		position: relative;
+		bottom:230px;
+		color:#fff;
+		padding:15px 10px;
+		font-weight:bold;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+     #imagen>div.title{
+		position: relative;
+		bottom:105px;
+		color:#fff;
+		padding:10px 10px;
+		font-weight:bold;
+    }
+}
