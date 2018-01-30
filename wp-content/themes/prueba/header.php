@@ -12,19 +12,18 @@
 	<link rel="stylesheet" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
 	<?php wp_head(); ?>
-
 </head>
-<body>
-	<header></header>
-    <div id="imagen">
-		<img src="<?php echo get_template_directory_uri() . '/images/4.png'; ?>" />
-				
-	<div class="title"><h1><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a></h1></div>
-			
-			<div><?php wp_nav_menu( array('menu' => 'Main', 'container' => 'nav' )); ?> </div>
-    </div>
+<body <?php body_class(); ?> >
+<div id="page" class="site">
+	<div class="site-branding">
+		<header class="site-header">
+			<img src="<?php echo get_template_directory_uri() . '/images/nueva.png'; ?>" />
+		</header><!-- #masthead -->
+		<div class="wrap">
+			<div class="page-title">&iquest;QUE BUSCAS EN LA PLATAFORMAS SOCIALES&#63;</div>
+			<?php wp_nav_menu( array('menu' => 'Main', 'container' => 'nav' )); ?>
+	    </div><!-- .wrap -->
+	</div><!-- .site-branding -->
 <div class="wrapper">
-
-<?php include('labs.php');?>
+<?php include_once('labs.php');?>
