@@ -1,12 +1,13 @@
-<div class="nameimage">
-	<div class="separador">
-		<hr class="lefthr">
+<div class="three">
+	<hr class="lefthr">
+</div><!--threecelda-->
+<div class="threeI">
+	<div class="comunidad">
 		<img src="<?php echo get_template_directory_uri() . '/images/COMUNIDAD.png'; ?>" />
-		<hr class="righthr">
 	</div>
-</div>
-<section id="sidebar">
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Main Sidebar') ) : ?>
-	<?php endif; ?>
-</section>
+</div><!--threeI-->
+<div class="threeR">								
+	<hr class="righthr">
+</div><!--threeR-->
 
+<?php include_once('comunidad.php');?>										

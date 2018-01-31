@@ -145,3 +145,15 @@
     </IfModule>
 </FilesMatch>
 # END W3TC Browser Cache
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /PruebaUpsocl/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /PruebaUpsocl/index.php [L]
+</IfModule>
+
+# END WordPress

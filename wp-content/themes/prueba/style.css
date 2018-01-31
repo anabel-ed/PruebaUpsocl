@@ -1,3 +1,11 @@
+/*
+Theme Name: yoselyn ramirez
+Theme URI: https://github.com/esmeraldarr/PruebaUpsocl
+Description: Tema con css grid.
+Author: yoselyn R
+Author URI: https://github.com/esmeraldarr/PruebaUpsocl
+Version: 1.0
+*/
 
 /* -------------------------------------------------------------------------------- */
 /*	0. CSS Reset
@@ -46,16 +54,6 @@ hr {
 	overflow: visible;
 }
 
-.lefthr {
-	float: left;
-	width:20%;
-	border-top: 3px solid #79d6b8;
-}
-.righthr {
-	float: right;
-	width:20%;
-	border-top: 3px solid #79d6b8;
-}
 
 pre {
 	font-family: monospace, monospace;
@@ -308,280 +306,257 @@ img {
 .content input[type="button"],
 
 
-/* -------------------------------------------------------------------------------- */
-/*	3. Header
-/* -------------------------------------------------------------------------------- */
+/*-------------------------------------------------------------
+contenedor
+--------------------------------------------------------------
+*/
 
+.contenedor{
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows:654px 300px 40px 100px 150px 150px 40px 120px 150px 400px;
+	grid-auto-rows: 80px;
+}
 
-header { 
+.one{
+	grid-column: 1 / span 4;
+    grid-row: 1;
+
+}
+
+.two{
+	grid-column: 1 / span 2 ;
+	grid-row:2;
+}
+
+.two-l{
+
+	grid-column: 3 / span 4;
+	grid-row: 2;
+}
+
+.three{
+	grid-column: 1 / span 2;
+	grid-row: 3;
+}
+
+.threeR{
+	grid-column: 3 / span 4;
+	grid-row: 3;
+}
+
+.threeI{
+	grid-column: 2 / span 3;
+	grid-row: 3;
+}
+
+.four{
+	grid-column: 1 / span 2;
+	grid-row: 4;
+}
+
+.fourT{
+	grid-column: 3 / span 4;
+	grid-row: 4;
+}
+
+.five{
+	grid-column: 1 / span 2;
+	grid-row: 5;
+}
+
+.fiveT{
+	grid-column: 3 / span 4;
+	grid-row: 5;
+}
+
+.six{
+	grid-column: 1 / span 2;
+	grid-row: 6;
+}
+
+.sixicon{
+	grid-column: 3 / span 4;
+	grid-row: 6;
+}
+.seven{
+	grid-column: 1 / span 2;
+	grid-row: 7;
+}
+
+.sevenR{
+	grid-column: 3 / span 4;
+	grid-row: 7;
+}
+
+.sevenI{
+	grid-column: 2 / span 3;
+	grid-row: 7;
+}
+
+.eigth{
+	grid-column: 1 / span 4;
+	grid-row: 8;
+}
+
+.eigthL{
+	grid-column: 1 / span 4;
+	grid-row: 9;
+}
+
+.celda{
+	background-color: #79d6b8;
 	position: relative;
-	padding: 1px 0;
-	border-top: 4px solid transparent; 
+}
+/*------------------------------------------------------------
+one
+-------------------------------------------------------------*/
+/*----------------------------------------------------------
+header
+------------------------------------------------------------*/
+.imagenfondo{
+	background-image: url("images/nueva.png");
+	height: 100%;
+}
+
+.cintillo{
+	border-top: 2px solid transparent; 
 	background-image:linear-gradient(to right,#ffaf2a,#ff932f,#ff942f,#ff754a,#fe5d64,#f24983,#de4ca0,#bc6ca9,#8e84b1,#8e84b1,#3a9aba,#00adb5,#00b497,#00b982,#00ba82,#00b791);
+	padding: 0px 0px ;
+	margin:0px 0px;
+	height: 3px;
 }
 
-/* -------------------------------------------------------------------------------- */
-/*	4. Main content
-/* -------------------------------------------------------------------------------- */
-.wrapper {
-	position: relative;
-	height:100%;
-	padding: 2% 2%;
-	background-color: #FFF;
+.Lcentro{
+    margin: 1px;
+    text-align: center;
 }
 
-.site-content-contain {
-	background-color: #fff;
-	position: relative;
+.Ldescrip{
+    margin: 1px;
+    text-align: center;
 }
+/*------------------------------------------------------------
+two
+-------------------------------------------------------------*/
 
-.site-content {
-	padding: 2.5em 0 0;
-}
-
-#imagen {
-	position:relative;
-}
-#imagen>div {		
-	position: relative;
-	bottom:670px;
-	color:#fff;
-	padding:30px 10px;
-	font-weight:bold;
-	border: 2px solid transparent;
-    border-radius: 3px;
-    margin: 100px;
-}
-
-#imagen>div.title{
-	position: relative;
-	bottom:550px;
-	color:#fff;
-	background-color: #79d6b8;	
-	padding:13px 10px;
-	font-weight:bold;
-	border: 2px solid #79d6b8;
-    border-radius: 3px;
-    margin: 140px;
-}
-
-.subsection {
-    position: absolute;
-    left: 0px;
-    float: left;
-    width: 250px;
-    height: 100px;
-    margin: 1em;
-}
-.section {
-    width: 590px;
+.labinf{
+	width: 600px;
     height: 100%;
-    margin: 1em;
-    float: right;
+    margin: 1px;
     text-align: justify;
 }
 
-
-#page {
-	position: relative;
-	word-wrap: break-word;
+.labimagen{
+	padding: 10px 160px;
 }
 
-.page-title{
-	border-radius: 10px 10px 10px 10px;
-	-moz-border-radius: 10px 10px 10px 10px;
-	-webkit-border-radius: 10px 10px 10px 10px;
-	border: 5px solid #79d6b8;
-	background-color:#79d6b8;
+/*------------------------------------------------------------
+three
+-------------------------------------------------------------*/
+.righthr{
+	text-align: left;
+	width: 90%;
+	border-top: 3px solid #79d6b8;
+} 
+
+.lefthr{
+	text-align: right;
+	width: 90%;
+	border-top: 3px solid #79d6b8;
 }
 
-.page-description{
-	border-radius: 10px 10px 10px 10px;
-	-moz-border-radius: 10px 10px 10px 10px;
-	-webkit-border-radius: 10px 10px 10px 10px;
-	border: 0px solid transparent;
+.comunidad{
+	padding: 0px 170px;
+    margin: 0px;
+    position: relative;
+    z-index: 1;
 }
 
-.wrap {
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -400%);
+/*------------------------------------------------------------
+four
+-------------------------------------------------------------*/
+
+.phone{
+	padding: 4px 160px;
+	z-index: 1;
+    position: relative;
 }
 
-.wrap:after {
-	clear: both;
-	content: "";
-	display: block;
+.comunidadT{
+	width: 600px;
+    height: 100%;
+    margin: 1px;
+    text-align: justify;
+}
+/*------------------------------------------------------------
+five
+-------------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------------------
+six
+-------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+seven
+-------------------------------------------------------------*/
+/*------------------------------------------------------------
+eigth
+------------------------------------------------------------*/
+.plataformaT{
+	width: 900px;
+    height: 100%;
+    margin: 0px 200px;
+    text-align: justify;
+    padding: 0px 20px;
 }
 
-#masthead .wrap {
-	position: relative;
+div.gallery {
+    border: 1px solid #ccc;
 }
 
-.site-header {
-	background-color: #f9f4f4;
-	position: relative;
+div.gallery:hover {
+    border: 1px solid #777;
 }
 
-/* Site branding */
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
 
-.site-branding {
- 	position: relative;
-    display: inline-block;
+div.desc {
+    padding: 15px;
     text-align: center;
-
 }
 
-.site-branding a {
-	text-decoration: none;
-	-webkit-transition: opacity 0.2s;
-	transition: opacity 0.2s;
+* {
+    box-sizing: border-box;
 }
 
-.site-branding a:hover,
-.site-branding a:focus {
-	opacity: 0.7;
+.responsive {
+    padding: 0 6px;
+    float: left;
+    
 }
 
-.site-branding-text {
-	vertical-align: middle;
-}
-.site-title {
-	clear: none;
-	font-size: 24px;
-	font-size: 1.5rem;
-	font-weight: 800;
-	line-height: 1.25;
-	letter-spacing: 0.08em;
-	margin: 0;
-	padding: 0;
-	text-transform: uppercase;
-}
-
-.site-title,
-.site-title a {
-	color: #222;
-	opacity: 1; /* Prevent opacity from changing during selective refreshes in the customize preview */
-}
-
-.site-description {
-	color: #666;
-	font-size: 13px;
-	font-size: 0.8125rem;
-	margin-bottom: 0;
-}
-
-.nameimage{
-	position: relative;
-    display: inline-block;
-    text-align: center;
-    margin: 1% 39% 10%;
-}
-
-.d{
-
-}
-/*-----------------------------------------------------------------------------
-footer
-----------------------------------------------------------------------------*/
-
-footer{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 70px;
-  background-color: white;
-  width: 100%;
-}
-
-.site-footer {
-	border-top: 1px solid #eee;
-}
-
-.site-footer .wrap {
-	padding-bottom: 1.5em;
-	padding-top: 2em;
-}
-
-/* Footer widgets */
-
-.site-footer .widget-area {
-	padding-bottom: 2em;
-	padding-top: 2em;
-}
-
-/*-----------------------------------------------
-media 
-*/
-
-@media screen and (min-width: 401px) and (max-width: 720px) {
-    #imagen>div {		
-    	position: relative;
-    	bottom:560px;
-    	color:#fff;
-    	padding:30px 10px; 
-    	font-weight:bold;
-    	border: 2px solid transparent;
-    	border-radius: 3px;
-    	margin: 100px;
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
     }
 }
 
-@media screen and (max-width: 400px) {
-    #imagen>div {		
-    	position: relative;
-    	bottom:290px;
-    	color:#fff;
-    	padding:10px 10px; 
-    	font-weight:bold;
-    	border: 2px solid transparent;
-    	border-radius: 3px;
-    	margin: 97px;
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
     }
 }
 
-@media screen and (min-width: 401px) and (max-width: 720px) {
-    #imagen>div.title {
-		position: relative;
-		bottom:430px;
-		color:#fff;
-		background-color: #79d6b8;	
-		padding:11px 10px;
-		font-weight:bold;
-		border: 2px solid #79d6b8;
-    	border-radius: 3px;
-    	margin: 140px;
-
-	}
-}
-
-@media screen and (max-width: 400px) {
-    #imagen>div.title {
-		position: relative;
-		bottom:195px;
-		color:#fff;
-		background-color: #79d6b8;	
-		padding: 4px 31px;
-		font-weight:bold;
-		border: 1px solid #79d6b8;
-    	border-radius: 3px;
-    	margin: 60px;
-    }
-}
-
-@media screen and (min-width: 401px) and (max-width: 720px){
-	.wrapper {
-		height:100%;
-		background-color: #FFF;
-    	margin: -70% 2% 1% 2%;
-	}
-}
-
-@media screen and (max-width: 400px){
-	.wrapper {
-		height:100%;
-		background-color: #FFF;
-    	margin: -106% 2% 1% 2%;
-	}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
