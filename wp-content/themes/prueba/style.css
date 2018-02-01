@@ -1,0 +1,718 @@
+/*
+Theme Name: yoselyn ramirez
+Theme URI: https://github.com/esmeraldarr/PruebaUpsocl
+Description: Tema con css grid.
+Author: yoselyn R
+Author URI: https://github.com/esmeraldarr/PruebaUpsocl
+Version: 1.0
+*/
+
+/* -------------------------------------------------------------------------------- */
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------------- */
+
+html {
+	font-family: sans-serif;
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+figcaption,
+figure,
+main {
+	display: block;
+}
+
+figure {
+	margin: 1em 0;
+}
+
+hr {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+
+pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+a {
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
+}
+
+a:active,
+a:hover {
+	outline-width: 0;
+}
+
+abbr[title] {
+	border-bottom: 1px #767676 dotted;
+	text-decoration: none;
+}
+
+b,
+strong {
+	font-weight: inherit;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+dfn {
+	font-style: italic;
+}
+
+mark {
+	background-color: #eee;
+	color: #222;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+audio,
+video {
+	display: inline-block;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+img {
+	border-style: none;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: sans-serif;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+
+button,
+input {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+fieldset {
+	border: 1px solid #bbb;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal;
+}
+
+progress {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+textarea {
+	overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+
+details,
+menu {
+	display: block;
+}
+
+summary {
+	display: list-item;
+}
+
+canvas {
+	display: inline-block;
+}
+
+template {
+	display: none;
+}
+
+[hidden] {
+	display: none;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	1. Document Setup
+/* -------------------------------------------------------------------------------- */
+
+
+body {
+	margin: 0;
+	padding: 0;
+	border: none;
+	color: #222;
+	background: #FFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+}
+
+
+* { 
+	box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+.hidden { display: none; }
+.clear { clear: both; }
+.fleft { float: left; }
+.fright { float: right; }
+
+::selection {
+	background: #222;
+	color: #FFF;
+}
+
+::-webkit-input-placeholder { color: #A9A9A9; }
+:-ms-input-placeholder { color: #A9A9A9; }
+
+.content input[type="submit"],
+.content input[type="reset"],
+.content input[type="button"],
+
+
+/*-------------------------------------------------------------
+contenedor
+--------------------------------------------------------------
+*/
+
+.contenedor{
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows:654px 300px 40px 100px 150px 150px 40px 120px 150px 160px 250px;
+	grid-auto-rows: 80px;
+}
+
+.one{
+	grid-column: 1 / span 4;
+    grid-row: 1;
+
+}
+
+.two{
+	grid-column: 1 / span 2 ;
+	grid-row:2;
+}
+
+.two-l{
+
+	grid-column: 3 / span 4;
+	grid-row: 2;
+}
+
+.three{
+	grid-column: 1 / span 2;
+	grid-row: 3;
+}
+
+.threeR{
+	grid-column: 3 / span 4;
+	grid-row: 3;
+}
+
+.threeI{
+	grid-column: 2 / span 3;
+	grid-row: 3;
+}
+
+.four{
+	grid-column: 1 / span 2;
+	grid-row: 4;
+}
+
+.fourT{
+	grid-column: 3 / span 4;
+	grid-row: 4;
+}
+
+.five{
+	grid-column: 1 / span 2;
+	grid-row: 5;
+}
+
+.fiveT{
+	grid-column: 3 / span 4;
+	grid-row: 5;
+}
+
+.six{
+	grid-column: 1 / span 2;
+	grid-row: 6;
+}
+
+.sixicon{
+	grid-column: 3 / span 4;
+	grid-row: 6;
+}
+.seven{
+	grid-column: 1 / span 2;
+	grid-row: 7;
+}
+
+.sevenR{
+	grid-column: 3 / span 4;
+	grid-row: 7;
+}
+
+.sevenI{
+	grid-column: 2 / span 3;
+	grid-row: 7;
+}
+
+.eigth{
+	grid-column: 1 / span 4;
+	grid-row: 8;
+}
+
+.eigthL{
+	grid-column: 2 / span 3;
+	grid-row: 9;
+}
+
+.nine{
+	grid-column: 1 / span 4;
+	grid-row: 10;
+}
+
+.ten{
+	grid-column: 1 / span 4;
+	grid-row: 11;
+}
+
+.celda{
+	background-color: #79d6b8;
+	position: relative;
+}
+/*------------------------------------------------------------
+one
+-------------------------------------------------------------*/
+/*----------------------------------------------------------
+header
+------------------------------------------------------------*/
+.imagenfondo{
+	background-image: url("images/nueva.png");
+	height: 100%;
+}
+
+.cintillo{
+	border-top: 2px solid transparent; 
+	background-image:linear-gradient(to right,#ffaf2a,#ff932f,#ff942f,#ff754a,#fe5d64,#f24983,#de4ca0,#bc6ca9,#8e84b1,#8e84b1,#3a9aba,#00adb5,#00b497,#00b982,#00ba82,#00b791);
+	padding: 0px 0px ;
+	margin:0px 0px;
+	height: 3px;
+}
+
+.Lcentro{
+    margin: 1px;
+    text-align: center;
+}
+
+.Ldescrip{
+    margin: 1px;
+    text-align: center;
+}
+/*------------------------------------------------------------
+two
+-------------------------------------------------------------*/
+
+.labinf{
+	width: 600px;
+    height: 100%;
+    margin: 1px;
+    text-align: justify;
+}
+
+.labimagen{
+	padding: 10px 160px;
+}
+
+/*------------------------------------------------------------
+three
+-------------------------------------------------------------*/
+.righthr{
+	text-align: left;
+	width: 90%;
+	border-top: 3px solid #79d6b8;
+} 
+
+.lefthr{
+	text-align: right;
+	width: 90%;
+	border-top: 3px solid #79d6b8;
+}
+
+.comunidad{
+	padding: 0px 170px;
+    margin: 0px;
+    position: relative;
+    z-index: 1;
+}
+
+/*------------------------------------------------------------
+four
+-------------------------------------------------------------*/
+
+.phone{
+	padding: 4px 160px;
+	z-index: 1;
+    position: relative;
+}
+
+.comunidadT{
+	width: 600px;
+    height: 100%;
+    margin: 1px;
+    text-align: justify;
+}
+/*------------------------------------------------------------
+five
+-------------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------------------
+six
+-------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+seven
+-------------------------------------------------------------*/
+/*------------------------------------------------------------
+eigth
+------------------------------------------------------------*/
+.plataformaT{
+	width: 900px;
+    height: 100%;
+    margin: 0px 200px;
+    text-align: justify;
+    padding: 0px 20px;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.gale{
+	padding: 0px 0px;
+    margin: 0px -80px;
+}
+/*----------------------------------------------------
+single
+--------------------------------------------------*/
+
+
+.commentlist li {
+  list-style: none !important;
+}
+
+
+.comment-body {
+  padding: 15px;
+}
+
+.comment-author {
+  margin-top: 5px;
+}
+
+.reply,  .commentmetadata {
+  font-size: 0.9em;
+}
+
+
+.depth-1, .depth-2, .depth-3, .depth-4 {
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+}
+
+.depth-1, .depth-3 {
+  background-color: #fafafa;
+}
+
+.depth-2, .depth-4 {
+   background-color: #fff;
+}
+
+.comment-author-eSandra {
+  border: 3px solid #eaeaea;
+  border-left:3px solid #fbc356;
+}
+
+.depth-1 {
+   margin: 20px 0;
+}
+/* Respuesta a comentarios*/
+
+
+.depth-2 {
+  margin:2% 5% !important;
+}
+
+.depth-3 {
+   margin: 2% 7% !important;
+}
+
+
+.depth-4 {
+  margin:2% 5% 4% 10% !important;
+}0
+1
++
+#comment, #author, #email {
+  border-radius: 4px;
+  border:2px solid #ccc;
+}
+
+/*---------------------------------------
+pagination
+----------------------------------------*/
+
+/*---------------------------------------
+nine
+----------------------------------------*/
+/* Makes images fully responsive */
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ------------------- Carousel Styling ------------------- */
+
+.carousel-inner {
+  border-radius: 15px;
+}
+
+.carousel-caption {
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 0 0 10px 25px;
+  color: #fff;
+  text-align: left;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+  margin: 0;
+  padding: 0 25px 25px 0;
+  text-align: right;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+
+/* ------------------- Section Styling - Not needed for carousel styling ------------------- */
+
+.section-white {
+   padding: 10px 0;
+}
+
+.section-white {
+  background-color: #fff;
+  color: #555;
+}
+
+@media screen and (min-width: 768px) {
+
+  .section-white {
+     padding: 1.5em 0;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  .container {
+    max-width: 930px;
+  }
+
+}
