@@ -1,56 +1,48 @@
 <?php get_header(); ?>
 <div class="nine">
-<div class="plataformaT">
-	<h2><strong>BRANDED POST</strong></h2> <p>Implica apoderarse de nuestra capacidad de alcanzar y conectar con los usuarios para impulsar y amplificar los mensajes de la marca.Con este objetivo,se desarrollan <strong>estrategias de contenido patrocinado a traves de Upsocl,</strong> publicando contenido en diferentes formatos y adaptado al objetivo estrategico del anunciante.</p>
-</div>
+	<hr class="lefthr">
 </div><!--nine-->
-
+<div class="nineI">
+	<div class="comunidad">
+		<img src="<?php echo get_template_directory_uri() . '/images/branded.png'; ?>" />
+	</div>
+</div><!--nineI-->
+<div class="nineR">
+	<hr class="righthr">
+</div><!--nineR-->
 <div class="ten">
-	<section class="section-white">
-  <div class="container">
-
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="http://placehold.it/800x400" alt="...">
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-        </div>
-        <div class="item">
-          <img src="http://placehold.it/800x400" alt="...">
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-        </div>
-        <div class="item">
-          <img src="http://placehold.it/800x400" alt="...">
-          <div class="carousel-caption">
-            <h2>Heading</h2>
-          </div>
-        </div>
-      </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-      </a>
-    </div>
-
-  </div>
-</section>
+	<div class="plataformaT">
+		<h2><strong>BRANDED POST</strong></h2> <p>Implica apoderarse de nuestra capacidad de alcanzar y conectar con los usuarios para impulsar y amplificar los mensajes de la marca.Con este objetivo,se desarrollan <strong>estrategias de contenido patrocinado a traves de Upsocl,</strong> publicando contenido en diferentes formatos y adaptado al objetivo estrategico del anunciante.</p>
+	</div>
 </div><!--ten-->
+<div class="eleven">
+	<section>   
+		<input type="radio" name="slider-select-element" id="element1" checked="checked" class="elementinput" />
+		<input type="radio" name="slider-select-element" id="element2" class="elementinput1" />
+		<input type="radio" name="slider-select-element" id="element3"  class="elementinput2" />
+		<div id="slider-container">
+			<div id="slider-box">
+				<div class="slider-element">
+					<article class="element-red">
+					</article>
+				</div>
+				<div class="slider-element">
+					<article class="element-green">
+					</article>
+				</div>
+				<div class="slider-element">
+					<article class="element-blue">
+					</article>                            
+				</div>
+			</div>
+		</div>
+		<div id="slider-arrows">
+			<label for="element1"></label>
+			<label for="element2"></label>
+			<label for="element3"></label>
+		</div>
+	</section>            
+</div><!--eleven-->
 <?php  get_sidebar()?>
 
 <?php get_footer(); ?>

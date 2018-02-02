@@ -32,8 +32,8 @@ section {
 }
 
 h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
+	font-size: 1em;
+	margin: 0.10em 0;
 }
 
 figcaption,
@@ -90,6 +90,11 @@ kbd,
 samp {
 	font-family: monospace, monospace;
 	font-size: 1em;
+}
+
+p{
+	font-size: 1em;
+    margin: 0.10em 0;
 }
 
 dfn {
@@ -314,7 +319,7 @@ contenedor
 .contenedor{
 	display: grid;
 	grid-template-columns: repeat(4, 25%);
-	grid-template-rows:654px 300px 40px 100px 150px 150px 40px 120px 150px 160px 250px;
+	grid-template-rows:654px 300px 40px 100px 150px 150px 40px 120px 170px 40px 180px 410px 30px;
 	grid-auto-rows: 80px;
 }
 
@@ -366,7 +371,12 @@ contenedor
 }
 
 .fiveT{
-	grid-column: 3 / span 4;
+	grid-column: 3;
+	grid-row: 5;
+}
+
+.fiveS{
+	grid-column: 4;
 	grid-row: 5;
 }
 
@@ -376,9 +386,15 @@ contenedor
 }
 
 .sixicon{
-	grid-column: 3 / span 4;
+	grid-column: 3;
 	grid-row: 6;
 }
+
+.sixic{
+	grid-column:4;
+	grid-row: 6;
+}
+
 .seven{
 	grid-column: 1 / span 2;
 	grid-row: 7;
@@ -409,11 +425,29 @@ contenedor
 	grid-row: 10;
 }
 
+.nineR{
+	grid-column: 3 / span 4;
+	grid-row: 10;
+}
+
+.nineI{
+	grid-column: 2 / span 3;
+	grid-row: 10;
+}
+
 .ten{
 	grid-column: 1 / span 4;
 	grid-row: 11;
 }
 
+.eleven{
+	grid-column: 1 / span 4;
+	grid-row: 12;
+}
+.twelve{
+	grid-column: 1 /span 4;
+	grid-row: 13;
+}
 .celda{
 	background-color: #79d6b8;
 	position: relative;
@@ -438,13 +472,20 @@ header
 }
 
 .Lcentro{
-    margin: 1px;
+    margin: -411px 0px -411px 0px;
     text-align: center;
 }
 
 .Ldescrip{
-    margin: 1px;
-    text-align: center;
+    margin: 50px 20px 50px 20px;
+    text-align: justify;
+    padding: 2px 430px 2px 430px;
+}
+.letra{
+	color: #fff;
+    border-color: #79d6b8;
+    background-color:#79d6b8;
+    margin: 10px 330px 10px 330px;
 }
 /*------------------------------------------------------------
 two
@@ -452,9 +493,9 @@ two
 
 .labinf{
 	width: 600px;
-    height: 100%;
-    margin: 1px;
+    margin: 20px 0px 20px 0px;
     text-align: justify;
+    padding: 0px;
 }
 
 .labimagen{
@@ -502,14 +543,39 @@ four
 /*------------------------------------------------------------
 five
 -------------------------------------------------------------*/
+.iconvista{
+	position: absolute;
+	z-index: 3;
+	margin: 20px 280px 20px 280px;
+	color: #79d6b8;
+}
 
+.iconV{
+	position: absolute;
+	z-index: 3;
+	margin: 20px 200px 20px 280px;
+	color: #79d6b8;
+}
 
+.vistaT{
+	margin: 115px 250px 10px 250px;
+    font-size: 15px;
+    position: relative;
+    z-index: 6;
+    text-align: center;
+}
 
+.icono4{
+	margin: 1px 30px 0px 30px;
+	text-align: center;
+}
 
-/*------------------------------------------------------------
-six
--------------------------------------------------------------*/
-
+.iconoT{
+    font-size: 15px;
+    position: relative;
+    z-index: 6;
+    text-align: center;
+}
 /*------------------------------------------------------------
 seven
 -------------------------------------------------------------*/
@@ -627,92 +693,154 @@ single
 
 .depth-4 {
   margin:2% 5% 4% 10% !important;
-}0
-1
-+
+}
 #comment, #author, #email {
   border-radius: 4px;
   border:2px solid #ccc;
 }
 
 /*---------------------------------------
-pagination
+nine and ten 
 ----------------------------------------*/
-
-/*---------------------------------------
-nine
-----------------------------------------*/
-/* Makes images fully responsive */
-
-.img-responsive,
-.thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  display: block;
-  width: 100%;
-  height: auto;
+input[name="slider-select-element"] {
+    display:inline-block;
 }
 
-/* ------------------- Carousel Styling ------------------- */
-
-.carousel-inner {
-  border-radius: 15px;
+.elementinput{
+	margin: 27% 43% 0%;
+    width: 17%;
+    position: absolute;
+    z-index: 2;
 }
 
-.carousel-caption {
-  background-color: rgba(0,0,0,.5);
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  padding: 0 0 10px 25px;
-  color: #fff;
-  text-align: left;
+.elementinput1{
+	margin: 27% 41% 0%;
+    width: 17%;
+    position: absolute;
+    z-index: 2;
 }
-
-.carousel-indicators {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  z-index: 15;
-  margin: 0;
-  padding: 0 25px 25px 0;
-  text-align: right;
-}
-
-.carousel-control.left,
-.carousel-control.right {
-  background-image: none;
+.elementinput2{
+	margin: 27% 39% 0%;
+    width: 17%;
+    position: absolute;
+    z-index: 2;
 }
 
 
-/* ------------------- Section Styling - Not needed for carousel styling ------------------- */
-
-.section-white {
-   padding: 10px 0;
+#slider-arrows {
+    margin: -18% 17% 18% 17%;
+    width: 66%;
+    position: absolute;
+    z-index: 1;
 }
 
-.section-white {
-  background-color: #fff;
-  color: #555;
+#slider-box {
+    height: 100%;
+    width: 300%;
+    position: relative;
 }
 
-@media screen and (min-width: 768px) {
-
-  .section-white {
-     padding: 1.5em 0;
-  }
-
+#slider-container {
+    height: 20%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+    width: 80%;
 }
 
-@media screen and (min-width: 992px) {
+.element-blue,
+.element-green,
+.element-red {
+    min-height: 400px;
+    max-height: 100%;
+    width: 100%;
+}
 
-  .container {
-    max-width: 930px;
-  }
+.element-blue {
+    background-image: url("images/coca.jpg");
+    background-repeat: no-repeat, repeat;
+}
 
+.element-green {
+    background-image: url("images/coca.jpg");
+    background-repeat: no-repeat, repeat;
+}
+
+.element-red {
+    background-image: url("images/coca.jpg");
+    background-repeat: no-repeat, repeat;
+}
+
+.slider-element {
+    float: left;
+    width: 33.333%;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(2),
+#element2:checked ~ #slider-arrows label:nth-child(3),
+#element3:checked ~ #slider-arrows label:nth-child(1) {
+    display: block;
+    float: right;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(3),
+#element2:checked ~ #slider-arrows label:nth-child(1),
+#element3:checked ~ #slider-arrows label:nth-child(2) {
+    display: block;
+    float: left;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(2):before,
+#element2:checked ~ #slider-arrows label:nth-child(3):before,
+#element3:checked ~ #slider-arrows label:nth-child(1):before {
+    color: black;
+    content: "\f054";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+#element1:checked ~ #slider-arrows label:nth-child(3):before,
+#element2:checked ~ #slider-arrows label:nth-child(1):before,
+#element3:checked ~ #slider-arrows label:nth-child(2):before {
+    color: black;
+    content: "\f053";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+#element1:checked ~ #slider-container #slider-box {
+    margin-left: 0;
+}
+
+#element2:checked ~ #slider-container #slider-box {
+    margin-left: -100%;
+}
+
+#element3:checked ~ #slider-container #slider-box {
+    margin-left: -200%;
+}
+
+#slider-arrows label {
+    color: transparent;
+    cursor: pointer;
+    display: none;
+    font-size: 2rem;
+    height: 20px;
+    width: 20px;
+}
+
+#slider-box {
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
 }

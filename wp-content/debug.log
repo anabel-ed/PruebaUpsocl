@@ -40,3 +40,11 @@
 [31-Jan-2018 19:56:11 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /var/www/html/PruebaUpsocl/wp-includes/functions.php on line 3842
 [31-Jan-2018 19:59:27 UTC] PHP Notice:  screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /var/www/html/PruebaUpsocl/wp-includes/functions.php on line 3842
 [31-Jan-2018 19:59:27 UTC] PHP Notice:  get_screen_icon is <strong>deprecated</strong> since version 3.8.0 with no alternative available. in /var/www/html/PruebaUpsocl/wp-includes/functions.php on line 3842
+[01-Feb-2018 15:27:20 UTC] PHP Notice:  Use of undefined constant   - assumed ' ' in /var/www/html/PruebaUpsocl/wp-content/themes/prueba/header.php on line 12
+[01-Feb-2018 15:29:19 UTC] PHP Notice:  Use of undefined constant   - assumed ' ' in /var/www/html/PruebaUpsocl/wp-content/themes/prueba/header.php on line 12
+[01-Feb-2018 15:29:57 UTC] PHP Notice:  Use of undefined constant   - assumed ' ' in /var/www/html/PruebaUpsocl/wp-content/themes/prueba/header.php on line 14
+[01-Feb-2018 16:00:12 UTC] PHP Notice:  Use of undefined constant   - assumed ' ' in /var/www/html/PruebaUpsocl/wp-content/themes/prueba/header.php on line 14
+[01-Feb-2018 16:00:46 UTC] PHP Notice:  Use of undefined constant   - assumed ' ' in /var/www/html/PruebaUpsocl/wp-content/themes/prueba/header.php on line 13
+[01-Feb-2018 16:02:23 UTC] PHP Notice:  Use of undefined constant   - assumed ' ' in /var/www/html/PruebaUpsocl/wp-content/themes/prueba/header.php on line 14
+[01-Feb-2018 16:03:22 UTC] PHP Notice:  Use of undefined constant   - assumed ' ' in /var/www/html/PruebaUpsocl/wp-content/themes/prueba/header.php on line 14
+[02-Feb-2018 02:06:44 UTC] PHP Notice:  Undefined variable: wp_error in /var/www/html/PruebaUpsocl/wp-content/plugins/popups/public/class-social-popup.php on line 353
