@@ -3,13 +3,10 @@
 	<hr class="lefthr">
 </div><!--nine-->
 <div class="nineI">
-	<div class="comunidad">
-		<img src="<?php echo get_template_directory_uri() . '/images/branded.png'; ?>" />
+	<div class="branden">
+		<span>BRANDED CONTENT</span>
 	</div>
 </div><!--nineI-->
-<div class="nineR">
-	<hr class="righthr">
-</div><!--nineR-->
 <div class="ten">
 	<div class="plataformaT">
 		<h2><strong>BRANDED POST</strong></h2> <p>Implica apoderarse de nuestra capacidad de alcanzar y conectar con los usuarios para impulsar y amplificar los mensajes de la marca.Con este objetivo,se desarrollan <strong>estrategias de contenido patrocinado a traves de Upsocl,</strong> publicando contenido en diferentes formatos y adaptado al objetivo estrategico del anunciante.</p>

@@ -3,12 +3,9 @@
 </div><!--sevencelda-->
 <div class="sevenI">
 	<div class="comunidad">
-		<img src="<?php echo get_template_directory_uri() . '/images/PLATAFORMAS.png'; ?>" />
+		<span>PLATAFORMAS</span>
 	</div>
 </div><!--sevenI-->
-<div class="sevenR">								
-	<hr class="righthr">
-</div><!--sevenR-->
 <div class="eigth">
 	<div class="plataformaT">
 		<p>La inspiraci&oacute;n,la inquietud de <strong>compartir con el mundo todo lo que merece ser contado</strong> y la obsesi&oacute;n por el optimismo ha marcado nuetro ADN. y por lo mismo, la relacion que tenemos con nuestra audiencia es real y genuina.</p>
@@ -54,4 +51,4 @@
   </div>
 </div>
 </div><!--eigthL-->
-<?php include_once('branden_content.php');?>
+<?php include_once('branden_content.php'); ?>
