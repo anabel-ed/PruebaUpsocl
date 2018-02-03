@@ -18,10 +18,6 @@ html {
 	-webkit-text-size-adjust: 100%;
 }
 
-body {
-	margin: 0;
-}
-
 article,
 aside,
 footer,
@@ -136,9 +132,7 @@ audio:not([controls]) {
 	height: 0;
 }
 
-img {
-	border-style: none;
-}
+
 
 svg:not(:root) {
 	overflow: hidden;
@@ -311,6 +305,7 @@ img {
 .content input[type="button"],
 
 
+
 /*-------------------------------------------------------------
 contenedor
 --------------------------------------------------------------
@@ -318,9 +313,9 @@ contenedor
 
 .contenedor{
 	display: grid;
-	grid-template-columns: repeat(4, 25%);
-	grid-template-rows:654px 300px 40px 100px 150px 150px 40px 120px 170px 40px 180px 410px 30px;
-	grid-auto-rows: 80px;
+	grid-template-columns: repeat(4, auto);
+	grid-template-rows:auto auto auto auto auto auto auto auto auto auto auto auto auto auto ;
+	
 }
 
 .one{
@@ -330,23 +325,18 @@ contenedor
 }
 
 .two{
-	grid-column: 1 / span 2 ;
+	grid-column: 1;
 	grid-row:2;
 }
 
 .two-l{
 
-	grid-column: 3 / span 4;
+	grid-column: 2 / span 3;
 	grid-row: 2;
 }
 
 .three{
-	grid-column: 1 / span 2;
-	grid-row: 3;
-}
-
-.threeR{
-	grid-column: 3 / span 4;
+	grid-column: 1 / span 4;
 	grid-row: 3;
 }
 
@@ -356,42 +346,42 @@ contenedor
 }
 
 .four{
-	grid-column: 1 / span 2;
-	grid-row: 4;
+	grid-column: 1;
+	grid-row: 4 / span 3;
 }
 
 .fourT{
-	grid-column: 3 / span 4;
-	grid-row: 4;
+	grid-column: 2 / span 3;
+	grid-row: 4 ;
 }
 
 .five{
-	grid-column: 1 / span 2;
+	grid-column: 1;
 	grid-row: 5;
 }
 
 .fiveT{
-	grid-column: 3;
+	grid-column: 2 / span 3;
 	grid-row: 5;
 }
 
 .fiveS{
-	grid-column: 4;
+	grid-column: 3;
 	grid-row: 5;
 }
 
 .six{
-	grid-column: 1 / span 2;
+	grid-column: 1/*  / span 2 */;
 	grid-row: 6;
 }
 
 .sixicon{
-	grid-column: 3;
+	grid-column: 2 / span 3;
 	grid-row: 6;
 }
 
 .sixic{
-	grid-column:4;
+	grid-column:3;
 	grid-row: 6;
 }
 
@@ -452,6 +442,7 @@ contenedor
 	background-color: #79d6b8;
 	position: relative;
 }
+
 /*------------------------------------------------------------
 one
 -------------------------------------------------------------*/
@@ -459,8 +450,7 @@ one
 header
 ------------------------------------------------------------*/
 .imagenfondo{
-	background-image: url("images/nueva.png");
-	height: 100%;
+	position: absolute;
 }
 
 .cintillo{
@@ -472,56 +462,73 @@ header
 }
 
 .Lcentro{
-    margin: -411px 0px -411px 0px;
-    text-align: center;
+    position: relative;
 }
 
 .Ldescrip{
-    margin: 50px 20px 50px 20px;
-    text-align: justify;
-    padding: 2px 430px 2px 430px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 12%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
 }
 .letra{
 	color: #fff;
     border-color: #79d6b8;
     background-color:#79d6b8;
-    margin: 10px 330px 10px 330px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
 }
 /*------------------------------------------------------------
 two
 -------------------------------------------------------------*/
 
-.labinf{
-	width: 600px;
-    margin: 20px 0px 20px 0px;
-    text-align: justify;
-    padding: 0px;
+.nueva{
+	font-size:18px;
+	text-align: justify;
+	padding: 0px 61px 0px 35px;
+}
+
+.objetivo{
+	font-size:18px;
+	text-align: justify;
+	padding: 0px 61px 0px 35px;
 }
 
 .labimagen{
-	padding: 10px 160px;
+	position: relative;
+	padding: 0px 30px 0px 30px;
 }
 
 /*------------------------------------------------------------
 three
 -------------------------------------------------------------*/
 .righthr{
-	text-align: left;
+	text-align: center;
 	width: 90%;
+	position: relative;
 	border-top: 3px solid #79d6b8;
 } 
 
 .lefthr{
-	text-align: right;
-	width: 90%;
+	/*text-align: center; */
+	width: 98%;
+	position: relative;
 	border-top: 3px solid #79d6b8;
 }
 
+
 .comunidad{
-	padding: 0px 170px;
-    margin: 0px;
-    position: relative;
-    z-index: 1;
+	position: absolute;
+    background: #fff;
+    color: #79d7b8;
+    font-weight: bold;
+    font-size: 33px;
+    margin: 0px 155px 0px 155px;
 }
 
 /*------------------------------------------------------------
@@ -529,16 +536,15 @@ four
 -------------------------------------------------------------*/
 
 .phone{
-	padding: 4px 160px;
 	z-index: 1;
     position: relative;
 }
 
 .comunidadT{
-	width: 600px;
-    height: 100%;
-    margin: 1px;
+	font-size: 18px;
     text-align: justify;
+    margin-top: 60px;
+    padding: 0px 61px 0px 33px;   
 }
 /*------------------------------------------------------------
 five
@@ -546,28 +552,46 @@ five
 .iconvista{
 	position: absolute;
 	z-index: 3;
-	margin: 20px 280px 20px 280px;
+	/* margin: 20px 280px 20px 280px; */
 	color: #79d6b8;
 }
 
 .iconV{
 	position: absolute;
 	z-index: 3;
-	margin: 20px 200px 20px 280px;
+	/* margin: 20px 200px 20px 280px; */
 	color: #79d6b8;
 }
 
 .vistaT{
-	margin: 115px 250px 10px 250px;
+	/* margin: 115px 250px 10px 250px; */
     font-size: 15px;
     position: relative;
     z-index: 6;
     text-align: center;
 }
 
+.phonetext {
+	z-index: 5;
+	width: 50%;
+	margin:auto;
+	position: relative;
+}
+
+.phonetext p,.phonetext h1 {
+	text-align: center
+}
+
+.phonetext > div {
+	width: 57%;
+	margin: auto;
+}
+
 .icono4{
-	margin: 1px 30px 0px 30px;
+	/* margin: 1px 30px 0px 30px */;
+	width: 40%;
 	text-align: center;
+	float: left;
 }
 
 .iconoT{
@@ -843,4 +867,522 @@ input[name="slider-select-element"] {
     -ms-transition: all 0.75s ease;
     -o-transition: all 0.75s ease;
     transition: all 0.75s ease;
+}
+/*---------------------------------------------
+media
+------------------------------------------*/
+@media screen and (max-width: 700px){
+	body{
+		font-size:12px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	body{
+		font-size:10px;
+	}
+}
+
+
+@media screen and (max-width: 400px) {
+    
+       .cintillo{
+    	border-top: 2px solid transparent; 
+    	background-image:linear-gradient(to right,#ffaf2a,#ff932f,#ff942f,#ff754a,#fe5d64,#f24983,#de4ca0,#bc6ca9,#8e84b1,#8e84b1,#3a9aba,#00adb5,#00b497,#00b982,#00ba82,#00b791);
+    	padding: 0px 0px ;
+    	margin:0px 0px;
+    	height: 3px;
+    	width: 100%;
+        max-width: 100%;
+    
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    
+       .cintillo{
+    	border-top: 2px solid transparent; 
+    	background-image:linear-gradient(to right,#ffaf2a,#ff932f,#ff942f,#ff754a,#fe5d64,#f24983,#de4ca0,#bc6ca9,#8e84b1,#8e84b1,#3a9aba,#00adb5,#00b497,#00b982,#00ba82,#00b791);
+    	padding: 0px 0px ;
+    	margin:0px 0px;
+    	height: 3px;
+    	width: 100%;
+        max-width: 100%;
+    
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    
+       .cintillo{
+    	border-top: 2px solid transparent; 
+    	background-image:linear-gradient(to right,#ffaf2a,#ff932f,#ff942f,#ff754a,#fe5d64,#f24983,#de4ca0,#bc6ca9,#8e84b1,#8e84b1,#3a9aba,#00adb5,#00b497,#00b982,#00ba82,#00b791);
+    	padding: 0px 0px ;
+    	margin:0px 0px;
+    	height: 3px;
+    	width: 100%;
+        max-width: 100%;
+    
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+       .cintillo{
+    	border-top: 2px solid transparent; 
+    	background-image:linear-gradient(to right,#ffaf2a,#ff932f,#ff942f,#ff754a,#fe5d64,#f24983,#de4ca0,#bc6ca9,#8e84b1,#8e84b1,#3a9aba,#00adb5,#00b497,#00b982,#00ba82,#00b791);
+    	padding: 0px 0px ;
+    	margin:0px 0px;
+    	height: 3px;
+    	width: 100%;
+        max-width: 100%;
+    
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+       .cintillo{
+    	border-top: 2px solid transparent; 
+    	background-image:linear-gradient(to right,#ffaf2a,#ff932f,#ff942f,#ff754a,#fe5d64,#f24983,#de4ca0,#bc6ca9,#8e84b1,#8e84b1,#3a9aba,#00adb5,#00b497,#00b982,#00ba82,#00b791);
+    	padding: 0px 0px ;
+    	margin:0px 0px;
+    	height: 3px;
+    	width: 100%;
+        max-width: 100%;
+    
+    }
+}
+
+@media screen and (min-width: 1921px) {
+       .cintillo{
+    	border-top: 2px solid transparent; 
+    	background-image:linear-gradient(to right,#ffaf2a,#ff932f,#ff942f,#ff754a,#fe5d64,#f24983,#de4ca0,#bc6ca9,#8e84b1,#8e84b1,#3a9aba,#00adb5,#00b497,#00b982,#00ba82,#00b791);
+    	padding: 0px 0px ;
+    	margin:0px 0px;
+    	height: 3px;
+    	width: 100%;
+        max-width: 100%;
+    
+    }
+}
+
+@media screen and (max-width: 400px) {
+    
+     .Lcentro{
+     	position: relative;
+     	width: 100%;
+        max-width: 100%;
+	}	
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    
+     .Lcentro{
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    
+     .Lcentro{
+       position: relative;
+       width: 100%;
+       max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .letra{
+        color: #fff;
+        border-color: #79d6b8;
+        background-color:#79d6b8;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 6px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .letra{
+        color: #fff;
+        border-color: #79d6b8;
+        background-color:#79d6b8;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    .letra{
+        color: #fff;
+        border-color: #79d6b8;
+        background-color:#79d6b8;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .Ldescrip{
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        right: 12%;
+        transform: translate(-50%, -50%);
+        font-size: 6px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .Ldescrip{
+		position: absolute;
+	    top: 54%;
+	    left: 49%;
+	    right: 12%;
+	    transform: translate(-50%, -50%);
+	    font-size: 13px;
+	    text-align: justify;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    .Ldescrip{
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        right: 12%;
+        transform: translate(-50%, -50%);
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    
+    
+    .labimagen{
+       position: relative;
+       width: 100%;
+       max-width: 100%;
+       padding: 0px 3px 0px 3px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    
+    
+    .labimagen{
+	   position: relative;
+       width: 100%;
+       max-width: 100%;
+       padding: 0px 30px 0px 30px;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    
+    
+    .labimagen{
+	   position: relative;
+       width: 100%;
+       max-width: 100%;
+       padding: 0px 70px 0px 70px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .labinf{
+		top: 51%;
+		left: 72%;
+		right: -24%;
+		transform: translate(-50%, -50%);
+		font-size: 6px;
+		text-align: justify;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .labinf{
+	    top: 107%;
+	    left: 72%;
+	    right: -24%;
+	    transform: translate(-50%, -50%);
+	    font-size: 13px;
+	    text-align: justify;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    .labinf{
+		top: 115%;
+		left: 72%;
+		right: -24%;
+		transform: translate(-50%, -50%);
+		font-size: 17px;
+		text-align: justify;
+	}
+}
+
+
+@media screen and (max-width: 400px) {
+    .comunidad{
+		position: absolute;
+		background: #fff;
+		color: #79d7b8;
+		font-weight: bold;
+		font-size: 33px;
+		margin: 10px 23px 10px 23px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .comunidad{
+      	position: absolute;
+	    background: #fff;
+	    color: #79d7b8;
+	    font-weight: bold;
+	    font-size: 33px;
+	    margin: 0px 35px 0px 35px;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    .comunidad{
+		position: absolute;
+	    background: #fff;
+	    color: #79d7b8;
+	    font-weight: bold;
+	    font-size: 33px;
+	    margin: 0px 35px 0px 35px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .lefthr{
+    	text-align: center;
+    	position: relative;
+        width: 90%;
+        max-width: 100%;
+    	border-top: 3px solid #79d6b8;
+    	margin-top: 18px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .lefthr{
+    	text-align: center;
+    	position: relative;
+        width: 90%;
+        max-width: 100%;
+    	border-top: 3px solid #79d6b8;
+    	margin-top: 18px;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    .lefthr{
+    	text-align: center;
+    	position: relative;
+        width: 90%;
+        max-width: 100%;
+    	border-top: 3px solid #79d6b8;
+    	margin-top: 18px;
+    	margin-top: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nueva{
+    	font-size:6px;
+    	text-align: justify;
+    	padding: 0px 30px 0px 30px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .nueva{
+    	font-size:12px;
+    	text-align: justify;
+    	padding: 0px 30px 0px 30px;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    .nueva{
+    	font-size:18px;
+    	text-align: justify;
+    	padding: 0px 30px 0px 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .objetivo{
+    	font-size:6px;
+    	text-align: justify;
+    	padding: 0px 30px 0px 30px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .objetivo{
+    	font-size:12px;
+    	text-align: justify;
+    	padding: 0px 30px 0px 30px;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    .objetivo{
+    	font-size:18px;
+    	text-align: justify;
+    	padding: 0px 30px 0px 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .comunidadT{
+        font-size: 6px;
+        text-align: justify;
+        margin-top: 10px;
+        padding: 0px 30px 0px 30px;    
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .comunidadT{
+        font-size: 12px;
+        text-align: justify;
+        margin-top: 10px;
+        padding: 0px 30px 0px 30px;   
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    .comunidadT{
+        font-size: 18px;
+        text-align: justify;
+        margin-top: 29px;
+        padding: 0px 30px 0px 30px;
+        
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .phone{
+        z-index: 1;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .phone{
+        z-index: 1;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    .phone{
+        z-index: 1;
+        position: relative;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    .contenedor{
+		display: grid;
+		grid-template-columns: repeat(4, auto);
+		grid-template-rows:auto auto auto auto auto auto auto auto auto auto auto auto auto ;
+		grid-auto-rows: 80px; 
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 720px) {
+     .contenedor{
+		display: grid;
+		grid-template-columns: repeat(4, auto);
+		grid-template-rows:auto auto auto auto auto auto auto auto auto auto auto auto auto ;
+		grid-auto-rows: 80px; 
+  }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    .contenedor{
+		display: grid;
+		grid-template-columns: repeat(4, auto);
+		grid-template-rows:auto auto auto auto auto auto auto auto auto auto auto auto auto ;
+		grid-auto-rows: 80px; 
+  }
+}
+
+@media screen and (max-width: 400px) {
+    .two-l{
+    
+    	grid-column: 2 / span 2;
+    	grid-row: 2;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .two-l{
+    
+    	grid-column: 2 / span 2;
+    	grid-row: 2;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    .two-l{
+    
+    	grid-column: 2 / span 3;
+    	grid-row: 2;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .fourT{
+    	grid-column: 2 / span 2;
+    	grid-row: 4 ;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .fourT{
+    	grid-column: 2 / span 2;
+    	grid-row: 4 ;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    .fourT{
+    	grid-column: 2 / span 3;
+    	grid-row: 4 ;
+    }
 }

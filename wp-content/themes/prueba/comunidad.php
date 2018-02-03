@@ -10,51 +10,64 @@
 </div><!--fourT-->
 
 <div class="five celda">
-	<div class="iconvista">
-		<img src="<?php echo get_template_directory_uri() . '/images/usuarios.png'; ?>" />
+	<div class="phonetext">
+			<div>
+				<img src="<?php echo get_template_directory_uri() . '/images/vistas.png'; ?>" />
+			</div>
+			<h1><strong>41.7MM</strong></h1>
+			<p>USUARIOS UNICOS</p>
 	</div>
-	<div class="vistaT"><h1><strong>41.7MM</strong></h1>
-		<p>USUARIOS UNICOS</p>
+	<!-- <div class="iconvista">
 	</div>
+	<div class="vistaT">
+	</div> -->
 </div><!--fivecelda-->
 <div class="fiveT celda">
 	<div class="icono4">
 		<img src="<?php echo get_template_directory_uri() . '/images/seguidores.png'; ?>" />
-	</div>
-	<div class="iconoT"><h1><strong>29MM</strong></h1>
+		<h1><strong>29MM</strong></h1>
 		<p>SEGUIDORES</p>
 	</div>
-</div>
-<div class="fiveS celda">
+	<!-- <div class="iconoT">
+	</div> -->
 	<div class="icono4">
 		<img src="<?php echo get_template_directory_uri() . '/images/megusta.png'; ?>" />
-	</div>
-	<div class="iconoT"><h1><strong>4.5000MM</strong></h1>
+		<h1><strong>4.5000MM</strong></h1>
 		<p>IMPRESIONES SOCIALES</p>
 	</div>
+	<!-- <div class="iconoT">
+	</div> -->
 </div>
+<!-- <div class="fiveS celda">
+</div> -->
 <div class="six celda">
-	<div class="iconV">
-		<img src="<?php echo get_template_directory_uri() . '/images/vistas.png'; ?>" />
-	</div>
-	<div class="vistaT"><h1><strong>142MM</strong></h1>
+	<div class="phonetext">
+		<div>
+			<img src="<?php echo get_template_directory_uri() . '/images/vistas.png'; ?>" />
+		</div>
+		<h1><strong>142MM</strong></h1>
 		<p>PAGINAS VISTAS</p>
 	</div>
+	<!-- <div class="iconV">
+	<div class="vistaT">
+	</div>
+	</div> -->
 </div>
 <div class="sixicon celda">
 	<div class="icono4">
 		<img src="<?php echo get_template_directory_uri() . '/images/video.png'; ?>" />
-	</div>
-	<div class="iconoT"><strong>340MM</strong>
+		<strong>340MM</strong>
 		<p>VISUALIZACIONES DE VIDEO</p>
 	</div>
+	<!-- <div class="iconoT">
+	</div> -->
 </div>
 <div class="sixic celda">
 	<div class="icono4">
 		<img src="<?php echo get_template_directory_uri() . '/images/comen.png'; ?>" />
-	</div>
-	<div class="iconoT"><h1><strong>247MM</strong></h1>
+		<h1><strong>247MM</strong></h1>
 		<p>INTERACCIONES SOCIALES</p>
 	</div>
+	<!-- <div class="iconoT">
+	</div> -->
 </div>
-<?php include_once('plataformas.php');?>
