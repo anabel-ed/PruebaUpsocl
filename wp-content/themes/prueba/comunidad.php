@@ -10,16 +10,50 @@
 </div><!--fourT-->
 
 <div class="five celda">
-
+	<div class="phonetext">
+			<div>
+				<img src="<?php echo get_template_directory_uri() . '/images/visitantes.png'; ?>" />
+			</div>
+			<h1><strong>41.7MM</strong></h1>
+			<p>USUARIOS UNICOS</p>
+	</div>
 </div><!--fivecelda-->
 <div class="fiveT celda">
-</div>
+	<div class="icono4">
+		<img src="<?php echo get_template_directory_uri() . '/images/seguidores.png'; ?>" />
+		<h1><strong>29MM</strong></h1>
+		<p>SEGUIDORES</p>
+	</div>
 
+	<div class="icono4">
+		<img src="<?php echo get_template_directory_uri() . '/images/megusta.png'; ?>" />
+		<h1><strong>4.5000MM</strong></h1>
+		<p>IMPRESIONES SOCIALES</p>
+	</div>
+</div>
 <div class="six celda">
-	
+	<div class="phonetext">
+		<div>
+			<img src="<?php echo get_template_directory_uri() . '/images/vistas.png'; ?>" />
+		</div>
+		<h1><strong>142MM</strong></h1>
+		<p>PAGINAS VISTAS</p>
+	</div>
 </div>
 <div class="sixicon celda">
+	<div class="icono4">
+		<img src="<?php echo get_template_directory_uri() . '/images/video.png'; ?>" />
+		<h1>
+			<strong>340MM</strong>
+		</h1>
+		<p>VISUALIZACIONES DE VIDEO</p>
+	</div>
 	
+	<div class="icono4">
+		<img src="<?php echo get_template_directory_uri() . '/images/comen.png'; ?>" />
+		<h1><strong>247MM</strong></h1>
+		<p>INTERACCIONES SOCIALES</p>
+	</div>
 </div>
+<?php include_once('plataformas.php'); ?>
 
-<?php include_once('plataformas.php');?>
